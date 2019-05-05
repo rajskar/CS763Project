@@ -27,9 +27,9 @@ I implemented Temporal Recurrent Cell which is the basic building for the propos
 
 
 # Code dependencies
-pytorch-gpu
-numpy
-and basic python libraries
+pytorch-gpu  
+numpy  
+and basic python libraries  
 
 # Detailed instructions for running the code, 
 command instructions that may reproduce the declared results.  
