@@ -21,10 +21,17 @@ After this step, we have features of each image in all the videos. But the annot
 Not all videos are of same duration. so frames sequences extracted were not of same length. To use them in Batches, I padded each batch with the zeros/ blank frames and assigned background class to the frame.
 
 # Implementation
-I implemented Temporal Recurrent Cell which is the basic building for the proposed Network. It consists of decoder RNN Cell, Future Gate and a SpatioTemporal RNN Cell from scratch. I made a network using this TRN Cell which takes input as sequences (video sequences). I implemented Loss function required for the TRN Network. Loss is weighted sum of losses obtained in anticipated action and current action and cross entropy is used as loss criterion. Optimiser used is Adam
+
+## Code Details
+I implemented Temporal Recurrent Cell which is the basic building for the proposed Network. It consists of decoder RNN Cell, Future Gate and a SpatioTemporal RNN Cell from scratch. I made a network using this TRN Cell which takes input as sequences (video sequences). I implemented Loss function required for the TRN Network. Loss is weighted sum of losses obtained in anticipated action and current action and cross entropy is used as loss criterion. Optimiser used is Adam. I used pytorch framework for implementing the model in python environment.
 
 ![alt text](https://github.com/rajskar/CS763Project/blob/master/Block%20Diagram.png?raw=true "Block Diagram")
 
+All the modules are in src folder.
+TRNCell.py is the basic module, criterion.py implements the required loss functions. ModelParam.py lists the trainable parameters in the network.feature_extractor.py extracts all the features for rgb and optical features.
+
+## Hardware
+Hardware Platform consisted of a Geforce GTX 1060 Graphic card, intel i3 processor cpu with 4GB RAM. 
 
 # Code dependencies
 pytorch-gpu  
