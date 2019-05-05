@@ -23,6 +23,8 @@ Not all videos are of same duration. so frames sequences extracted were not of s
 # Implementation
 I implemented Temporal Recurrent Cell which is the basic building for the proposed Network. It consists of decoder RNN Cell, Future Gate and a SpatioTemporal RNN Cell from scratch. I made a network using this TRN Cell which takes input as sequences (video sequences). I implemented Loss function required for the TRN Network. Loss is weighted sum of losses obtained in anticipated action and current action and cross entropy is used as loss criterion. Optimiser used is Adam
 
+![alt text](https://github.com/rajskar/CS763Project/blob/master/Block%20Diagram.png?raw=true "Block Diagram")
+
 
 # Code dependencies
 pytorch-gpu
@@ -39,7 +41,6 @@ Download the trained Model from
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-![alt text](https://github.com/rajskar/CS763Project/blob/master/Block%20Diagram.png)
 
 # References
 https://arxiv.org/pdf/1811.07391.pdf
