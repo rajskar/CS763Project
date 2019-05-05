@@ -39,7 +39,7 @@ Download the trained Model from
 | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  |
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/rajskar/CS763Project/blob/master/Block%20Diagram.png)
 
 # References
 https://arxiv.org/pdf/1811.07391.pdf
