@@ -32,7 +32,7 @@ numpy
 and basic python libraries
 
 # Detailed instructions for running the code, 
-command instructions that may reproduce the declared results. 
+command instructions that may reproduce the declared results.  
 Download the trained Model from   
 
 # Results
@@ -43,5 +43,5 @@ Download the trained Model from
 
 
 # References
-https://arxiv.org/pdf/1811.07391.pdf
+https://arxiv.org/pdf/1811.07391.pdf  
 http://pytorch.org
