@@ -61,7 +61,7 @@ and basic python libraries
 
 # Detailed instructions for running the code, 
 ## for default run
-cd src
+cd src  
 python main4.py 
 ## Args it can take are
 D_inpseq, D_future, D_in, D_hid, D_out, BatchSize, alpha lr, path to model
