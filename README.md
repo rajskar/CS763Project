@@ -67,7 +67,7 @@ python main4.py
 D_inpseq, D_future, D_in, D_hid, D_out, BatchSize, alpha lr, path to model
 
 This will run the model and save the final model as Model.pth in same folder
-Download the (not very well) trained Model from   
+Download the (not very well) trained Model from  https://github.com/rajskar/CS763Project/blob/master/Model/model.pth  
 
 
 # References
