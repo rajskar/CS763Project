@@ -1,5 +1,6 @@
 # Title
-Implementation of "Temporal Recurrent Networks for Online Action Detection" by Mingze Xu, Mingfei Gao, Yi-Ting Chen, Larry S. Davis and David J. Crandall. 
+Implementation of paper titled  
+"Temporal Recurrent Networks for Online Action Detection" by Mingze Xu, Mingfei Gao, Yi-Ting Chen, Larry S. Davis and David J. Crandall. 
 
 # Astract
 Real time systems, especially surveillance, require identifying actions at the earliest. But most of the work on temporal action detection is formulated in offline workflow. To make the action detection online and at the earliest, not only the past evidence and present state are sufficient, but also the future anticipation is necessary. Under this assumption, this paper presents a novel framework called Temporal Recurrent Networks (TRNs) to model temporal context of a video frame by simultaneously performing online detection and anticipation of immediate future. I implemented TRN Cell Module and other required modules from scratch using pytorch framework and python language. I used Thumos'15 Dataset for training the model.
