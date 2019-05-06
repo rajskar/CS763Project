@@ -30,6 +30,27 @@ I implemented Temporal Recurrent Cell which is the basic building for the propos
 All the modules are in src folder.
 TRNCell.py is the basic module, criterion.py implements the required loss functions. ModelParam.py lists the trainable parameters in the network.feature_extractor.py extracts all the features for rgb and optical features.
 
+### Trainable Parameters
+         TRNCell.DecRNNCell.weight_ih tensor(344064)
+         TRNCell.DecRNNCell.weight_hh tensor(67108864)
+         TRNCell.DecRNNCell.bias_ih tensor(16384)
+         TRNCell.DecRNNCell.bias_hh tensor(16384)
+         TRNCell.LinLayerR0.weight tensor(16777216)
+         TRNCell.LinLayerR0.bias tensor(4096)
+         TRNCell.LinLayerRp.weight tensor(86016)
+         TRNCell.LinLayerRp.bias tensor(21)
+         TRNCell.LinLayerRr.weight tensor(441)
+         TRNCell.LinLayerRr.bias tensor(21)
+         TRNCell.LinLayerS0.weight tensor(16777216)
+         TRNCell.LinLayerS0.bias tensor(4096)
+         TRNCell.StaRNNCell.weight_ih tensor(134217728)
+         TRNCell.StaRNNCell.weight_hh tensor(67108864)
+         TRNCell.StaRNNCell.bias_ih tensor(16384)
+         TRNCell.StaRNNCell.bias_hh tensor(16384)
+         TRNCell.LinLayerSn.weight tensor(86016)
+         TRNCell.LinLayerSn.bias tensor(21)
+Total trainable parameters tensor(302580216)
+
 ## Hardware
 Hardware Platform consisted of a Geforce GTX 1060 Graphic card, intel i3 processor cpu with 4GB RAM. 
 
@@ -39,16 +60,17 @@ numpy
 and basic python libraries  
 
 # Detailed instructions for running the code, 
-command instructions that may reproduce the declared results.  
-Download the trained Model from   
+## for default run
+cd src
+python main4.py 
+## Args it can take are
+D_inpseq, D_future, D_in, D_hid, D_out, BatchSize, alpha lr, path to model
 
-# Results
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+This will run the model and save the final model as Model.pth in same folder
+Download the (not very well) trained Model from   
 
 
 # References
 https://arxiv.org/pdf/1811.07391.pdf  
+https://arxiv.org/abs/1707.04818: RED: Reinforced Encoder-Decoder Networks for Action Anticipation   
 http://pytorch.org
